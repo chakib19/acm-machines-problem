@@ -1,7 +1,9 @@
 package optim.tests;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -166,6 +168,17 @@ public class ACMMachinesTest {
 
 		List<OptimizationInstance> instances = OptimizationInstanceFileBuilder.buildInstances(filePath);
 
+		Map<String, Integer> expectedResults = new HashMap<String, Integer>();
+		expectedResults.put("case 1", 44) ;
+		expectedResults.put("case 2", 11) ;
+		expectedResults.put("case 3", 12) ;
+		expectedResults.put("case 4", 10) ;
+		expectedResults.put("case 5", 39) ;
+		expectedResults.put("case 6", 39) ;
+
+
+		
+       
 		for (OptimizationInstance instance : instances) {
 			instance.maximizeProfit();
 		}
