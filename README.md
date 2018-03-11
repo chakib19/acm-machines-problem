@@ -40,3 +40,68 @@ Example Input Example Output
 
 
 ....
+
+'''
+Gradle Test Executor 1 started executing tests.
+
+optim.tests.ACMMachinesTest > testFromFile STANDARD_OUT
+    18:37:33.988 [Test worker] INFO  optim.tests.ACMMachinesTest - Testing from file: src/test/resources/scenarios.txt
+Gradle Test Executor 1 finished executing tests.
+    18:37:34.003 [Test worker] ERROR o.OptimizationInstanceFileBuilder - Wrong integer format in file 'src/test/resources/scenarios.                                                            txt'
+    18:37:34.003 [Test worker] INFO  optimization.OptimizationInstance - case 1: 44
+    18:37:34.003 [Test worker] INFO  optimization.OptimizationInstance - case 2: 11
+    18:37:34.003 [Test worker] INFO  optimization.OptimizationInstance - case 3: 12
+    18:37:34.003 [Test worker] INFO  optimization.OptimizationInstance - case 4: 10
+    18:37:34.003 [Test worker] INFO  optimization.OptimizationInstance - case 5: 39
+    18:37:34.003 [Test worker] INFO  optimization.OptimizationInstance - case 6: 39
+
+optim.tests.ACMMachinesTest > test1 STANDARD_OUT
+    18:37:34.003 [Test worker] INFO  optim.tests.ACMMachinesTest - Testing case1:
+    6 10 20
+    6 12 1 3
+    1 9 1 2
+    3 2 1 2
+    8 20 5 4
+    4 11 7 4
+    2 10 9 1
+    18:37:34.003 [Test worker] INFO  optimization.OptimizationInstance - case 1: 44
+
+optim.tests.ACMMachinesTest > test2 STANDARD_OUT
+    18:37:34.003 [Test worker] INFO  optim.tests.ACMMachinesTest - Testing case2:
+    0 11 30
+    18:37:34.003 [Test worker] INFO  optimization.OptimizationInstance - case 2: 11
+
+optim.tests.ACMMachinesTest > test3 STANDARD_OUT
+    18:37:34.003 [Test worker] INFO  optim.tests.ACMMachinesTest - Testing case3:
+    1 12 30
+    30 10 5 3
+    18:37:34.003 [Test worker] INFO  optimization.OptimizationInstance - case 3: 12
+
+optim.tests.ACMMachinesTest > test4 STANDARD_OUT
+    18:37:34.003 [Test worker] INFO  optim.tests.ACMMachinesTest - Testing case4:
+    1 10 2
+    1 10 2 1
+    18:37:34.003 [Test worker] INFO  optimization.OptimizationInstance - case 4: 10
+
+optim.tests.ACMMachinesTest > test5 STANDARD_OUT
+    18:37:34.003 [Test worker] INFO  optim.tests.ACMMachinesTest - Testing case5:
+    2 10 11
+    1 10 4 3
+    1 10 9 3
+    18:37:34.003 [Test worker] INFO  optimization.OptimizationInstance - case 5: 39
+
+optim.tests.ACMMachinesTest > test6 STANDARD_OUT
+    18:37:34.003 [Test worker] INFO  optim.tests.ACMMachinesTest - Testing case6:
+    2 10 11
+    1 10 9 3
+    1 10 4 3
+    18:37:34.003 [Test worker] INFO  optimization.OptimizationInstance - case 6: 39
+Finished generating test XML results (0.021 secs) into: C:\Users\COMPUTER\git\acm-machines-problem\build\test-results\test
+Generating HTML test report...
+Finished generating test html results (0.168 secs) into: C:\Users\COMPUTER\git\acm-machines-problem\build\reports\tests\test
+:test (Thread[Daemon worker,5,main]) completed. Took 2.625 secs.
+
+BUILD SUCCESSFUL in 31s
+5 actionable tasks: 5 executed
+VCS Checkout Cache (C:\Users\COMPUTER\git\acm-machines-problem\.gradle\vcsWorkingDirs) has not been cleaned up in 0 days
+'''
