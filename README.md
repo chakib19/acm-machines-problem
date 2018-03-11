@@ -1,4 +1,4 @@
-# acm-machines-problem
+﻿# ACM-machines-problem
 Repository to solve acm machines problem using java, gradle and eclipse
 
 ## Problem description 
@@ -39,3 +39,4 @@ Example Input Example Output
 6 10 20 Case 1: 44
 
 
+....

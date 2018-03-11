@@ -1,0 +1,38 @@
+// Specify Gradle version
+task wrapper(type: Wrapper) {
+	gradleVersion = '2.0-rc-2'
+}
+
+// Apply java plugin: project class sources and resources in src/main/java and src/main/resources.
+// project test sources and resources in src/test/java and src/test/resources
+
+apply plugin: 'java'
+
+// Define repositories to import dependencies
+repositories {
+	mavenCentral()
+}
+
+// Define dependencies for compilation of tests / classes
+
+dependencies {
+
+  compile([
+    'org.slf4j:slf4j-api:1.7.12',
+    'ch.qos.logback:logback-classic:1.1.3',
+    'ch.qos.logback:logback-core:1.1.3' 
+  ])
+
+  testCompile([
+	 'junit:junit:4.12'
+  ])
+}
+
+// Specify java version used
+compileJava {
+	sourceCompatibility = '1.8'
+}
+
+// Create the Eclipse-specific descriptor files, like .project
+
+apply plugin: 'eclipse'
