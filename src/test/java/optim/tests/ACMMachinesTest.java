@@ -167,6 +167,8 @@ public class ACMMachinesTest {
 		LOG.info("Testing from file: " + filePath);
 
 		List<OptimizationInstance> instances = OptimizationInstanceFileBuilder.buildInstances(filePath);
+		
+		Assert.assertEquals("number optim instances",  6, instances.size());
 
 		Map<String, Integer> expectedResults = new HashMap<String, Integer>();
 		expectedResults.put("case 1", 44) ;
@@ -175,6 +177,10 @@ public class ACMMachinesTest {
 		expectedResults.put("case 4", 10) ;
 		expectedResults.put("case 5", 39) ;
 		expectedResults.put("case 6", 39) ;
+		
+		for (OptimizationInstance instance : instances) {
+			Assert.assertEquals("max profit",  instance.maximizeProfit(), expectedResults.get(instance.getInstanceId()).intValue());
+		}
 
 
 		
