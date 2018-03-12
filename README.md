@@ -44,22 +44,23 @@ Example Input Example Output
 ```
 gradle test -i
 
-  15:02:43.344 [Test worker] INFO  optim.tests.ACMMachinesTest - Testing from                                                                                                                 file: src/test/resources/scenarios.txt
-    15:02:43.408 [Test worker] INFO  optimization.OptimizationInstance - case 1:                                                                                                                 44
-    15:02:43.408 [Test worker] INFO  optimization.OptimizationInstance - case 2:                                                                                                                 11
-    15:02:43.409 [Test worker] INFO  optimization.OptimizationInstance - case 3:                                                                                                                 12
-    15:02:43.409 [Test worker] INFO  optimization.OptimizationInstance - case 4:                                                                                                                 10
-    15:02:43.410 [Test worker] INFO  optimization.OptimizationInstance - case 5:                                                                                                                 39
-    15:02:43.411 [Test worker] INFO  optimization.OptimizationInstance - case 6:                                                                                                                 39
-    15:02:43.411 [Test worker] INFO  optimization.OptimizationInstance - case 1:                                                                                                                 44
-    15:02:43.412 [Test worker] INFO  optimization.OptimizationInstance - case 2:                                                                                                                 11
-    15:02:43.412 [Test worker] INFO  optimization.OptimizationInstance - case 3:                                                                                                                 12
-    15:02:43.413 [Test worker] INFO  optimization.OptimizationInstance - case 4:                                                                                                                 10
-    15:02:43.413 [Test worker] INFO  optimization.OptimizationInstance - case 5:                                                                                                                 39
-    15:02:43.414 [Test worker] INFO  optimization.OptimizationInstance - case 6:                                                                                                                 39
+  optim.tests.ACMMachinesTest > testFromFile STANDARD_OUT
+    16:11:27.145 [Test worker] INFO  optim.tests.ACMMachinesTest - Testing from file: src/test/resources/scenarios.txt
+    16:11:27.164 [Test worker] INFO  optimization.OptimizationInstance - case 1: 44
+    16:11:27.165 [Test worker] INFO  optimization.OptimizationInstance - case 2: 11
+    16:11:27.166 [Test worker] INFO  optimization.OptimizationInstance - case 3: 12
+    16:11:27.166 [Test worker] INFO  optimization.OptimizationInstance - case 4: 10
+    16:11:27.167 [Test worker] INFO  optimization.OptimizationInstance - case 5: 39
+    16:11:27.167 [Test worker] INFO  optimization.OptimizationInstance - case 6: 39
+    16:11:27.168 [Test worker] INFO  optimization.OptimizationInstance - case 1: 44
+    16:11:27.168 [Test worker] INFO  optimization.OptimizationInstance - case 2: 11
+    16:11:27.168 [Test worker] INFO  optimization.OptimizationInstance - case 3: 12
+    16:11:27.169 [Test worker] INFO  optimization.OptimizationInstance - case 4: 10
+    16:11:27.170 [Test worker] INFO  optimization.OptimizationInstance - case 5: 39
+    16:11:27.170 [Test worker] INFO  optimization.OptimizationInstance - case 6: 39
 
 optim.tests.ACMMachinesTest > test1 STANDARD_OUT
-    15:02:43.421 [Test worker] INFO  optim.tests.ACMMachinesTest - Testing case1                                                                                                                :
+    16:11:27.173 [Test worker] INFO  optim.tests.ACMMachinesTest - Testing case1:
     6 10 20
     6 12 1 3
     1 9 1 2
@@ -67,44 +68,46 @@ optim.tests.ACMMachinesTest > test1 STANDARD_OUT
     8 20 5 4
     4 11 7 4
     2 10 9 1
-    15:02:43.422 [Test worker] INFO  optimization.OptimizationInstance - case 1:                                                                                                                 44
+    16:11:27.176 [Test worker] INFO  optimization.OptimizationInstance - case 1: 44
 
 optim.tests.ACMMachinesTest > test2 STANDARD_OUT
-    15:02:43.423 [Test worker] INFO  optim.tests.ACMMachinesTest - Testing case2                                                                                                                :
+    16:11:27.179 [Test worker] INFO  optim.tests.ACMMachinesTest - Testing case2:
     0 11 30
-    15:02:43.423 [Test worker] INFO  optimization.OptimizationInstance - case 2:                                                                                                                 11
+Gradle Test Executor 2 finished executing tests.
+    16:11:27.179 [Test worker] INFO  optimization.OptimizationInstance - case 2: 11
 
 optim.tests.ACMMachinesTest > test3 STANDARD_OUT
-    15:02:43.425 [Test worker] INFO  optim.tests.ACMMachinesTest - Testing case3                                                                                                                :
+    16:11:27.180 [Test worker] INFO  optim.tests.ACMMachinesTest - Testing case3:
     1 12 30
     30 10 5 3
-    15:02:43.426 [Test worker] INFO  optimization.OptimizationInstance - case 3:                                                                                                                 12
+    16:11:27.181 [Test worker] INFO  optimization.OptimizationInstance - case 3: 12
 
 optim.tests.ACMMachinesTest > test4 STANDARD_OUT
-    15:02:43.427 [Test worker] INFO  optim.tests.ACMMachinesTest - Testing case4                                                                                                                :
+    16:11:27.181 [Test worker] INFO  optim.tests.ACMMachinesTest - Testing case4:
     1 10 2
     1 10 2 1
-    15:02:43.427 [Test worker] INFO  optimization.OptimizationInstance - case 4:                                                                                                                 10
+    16:11:27.182 [Test worker] INFO  optimization.OptimizationInstance - case 4: 10
 
 optim.tests.ACMMachinesTest > test5 STANDARD_OUT
-    15:02:43.428 [Test worker] INFO  optim.tests.ACMMachinesTest - Testing case5                                                                                                                :
+    16:11:27.182 [Test worker] INFO  optim.tests.ACMMachinesTest - Testing case5:
     2 10 11
     1 10 4 3
     1 10 9 3
-    15:02:43.428 [Test worker] INFO  optimization.OptimizationInstance - case 5:                                                                                                                 39
+    16:11:27.183 [Test worker] INFO  optimization.OptimizationInstance - case 5: 39
 
 optim.tests.ACMMachinesTest > test6 STANDARD_OUT
-    15:02:43.429 [Test worker] INFO  optim.tests.ACMMachinesTest - Testing case6                                                                                                                :
+    16:11:27.184 [Test worker] INFO  optim.tests.ACMMachinesTest - Testing case6:
     2 10 11
     1 10 9 3
     1 10 4 3
-    15:02:43.429 [Test worker] INFO  optimization.OptimizationInstance - case 6:                                                                                                                 39
-Gradle Test Executor 1 finished executing tests.
-Finished generating test XML results (0.091 secs) into: C:\Users\COMPUTER\git\ac                                                                                                                m-machines-problem\build\test-results\test
+    16:11:27.185 [Test worker] INFO  optimization.OptimizationInstance - case 6: 39
+Finished generating test XML results (0.018 secs) into: C:\Users\COMPUTER\git\acm-machines-problem\build\test-results\test
 Generating HTML test report...
-Finished generating test html results (0.137 secs) into: C:\Users\COMPUTER\git\a                                                                                                                cm-machines-problem\build\reports\tests\test
-:test (Thread[Task worker for ':',5,main]) completed. Took 4.13 secs.
+Finished generating test html results (0.141 secs) into: C:\Users\COMPUTER\git\acm-machines-problem\build\reports\tests\test
+:test (Thread[Task worker for ':' Thread 3,5,main]) completed. Took 9.765 secs.
 
-BUILD SUCCESSFUL in 54s
+BUILD SUCCESSFUL in 20s
+6 actionable tasks: 6 executed
+
 
 ```
